@@ -1,0 +1,8 @@
+{
+  "name": "Journal-Front_End",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
