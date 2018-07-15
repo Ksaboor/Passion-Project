@@ -1,6 +1,6 @@
 {
   "name": "Journal-Front_End",
-  "app_id": "",
+  "app_id": "6ec425b1",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
