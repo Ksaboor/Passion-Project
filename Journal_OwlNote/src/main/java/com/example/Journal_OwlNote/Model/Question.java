@@ -1,19 +1,22 @@
 package com.example.Journal_OwlNote.Model;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
-@Table
-public class JournalResponse {
+public class Question {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String response;
+
     private String question;
 
-    public JournalResponse(){}
+    public Question(){}
 
-    public JournalResponse(String question) {
+    public Question(String question) {
         this.question = question;
     }
 
@@ -23,14 +26,6 @@ public class JournalResponse {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getResponse() {
-        return response;
-    }
-
-    public void setResponse(String response) {
-        this.response = response;
     }
 
     public String getQuestion() {
