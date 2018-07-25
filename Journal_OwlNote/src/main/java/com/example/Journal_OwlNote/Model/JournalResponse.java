@@ -8,13 +8,14 @@ public class JournalResponse {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String response;
-    private String question;
+
 
     public JournalResponse(){}
 
-    public JournalResponse(String question) {
-        this.question = question;
+    public JournalResponse(String response) {
+        this.response = response;
     }
 
     public Long getId() {
@@ -33,11 +34,4 @@ public class JournalResponse {
         this.response = response;
     }
 
-    public String getQuestion() {
-        return question;
-    }
-
-    public void setQuestion(String question) {
-        this.question = question;
-    }
 }
