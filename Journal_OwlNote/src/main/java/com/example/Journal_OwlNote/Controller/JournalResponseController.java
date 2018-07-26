@@ -1,6 +1,6 @@
 package com.example.Journal_OwlNote.Controller;
 import com.example.Journal_OwlNote.Model.JournalResponse;
-import com.example.Journal_OwlNote.repo.JournalRepsonseRepo;
+import com.example.Journal_OwlNote.repo.JournalRepsonseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,7 +11,7 @@ import java.util.List;
 public class JournalResponseController {
 
     @Autowired
-    private JournalRepsonseRepo journalRepo;
+    private JournalRepsonseRepository journalRepo;
 
     @GetMapping("/response")
     public List<JournalResponse> journalresponse(){ return journalRepo.findAll();}

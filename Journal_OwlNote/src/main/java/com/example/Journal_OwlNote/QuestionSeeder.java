@@ -1,8 +1,6 @@
 package com.example.Journal_OwlNote;
 
-import com.example.Journal_OwlNote.Model.JournalResponse;
 import com.example.Journal_OwlNote.Model.Question;
-import com.example.Journal_OwlNote.repo.JournalRepsonseRepo;
 import com.example.Journal_OwlNote.repo.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;

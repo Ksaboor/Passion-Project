@@ -3,7 +3,6 @@ package com.example.Journal_OwlNote.Model;
 import javax.persistence.*;
 
 @Entity
-@Table
 public class JournalResponse {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
