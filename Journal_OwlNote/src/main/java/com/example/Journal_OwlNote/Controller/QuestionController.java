@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/")
+@RequestMapping("questions")
 @CrossOrigin(origins = {"http://localhost:8100"})
 public class QuestionController {
 
     @Autowired
     private QuestionRepository questionrepo;
 
-    @GetMapping("/questions")
+    @GetMapping("/Getquestions")
     public List<Question> questions(){
         return questionrepo.findAll();
     }
@@ -29,3 +29,4 @@ public class QuestionController {
     @PostMapping("/questions")
     public Question postQuestion(@RequestBody Question questionResponse){ return questionrepo.save(questionResponse);}
 }
+
